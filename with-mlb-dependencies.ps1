@@ -86,4 +86,6 @@ if ($mlb) {
   "${target}: $sml" | Out-File -Encoding "ASCII" $deps
 }
 
+Get-Content ".mlb-dependencies-output" | Out-Host
+
 
