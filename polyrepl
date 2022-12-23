@@ -48,10 +48,16 @@ mydir=$(dirname "$0")
 
 out=$(get_outfile "$arg")  # we don't use this, but it does some arg error checking
 
-if [ "$debug" = "yes" ]; then
-    rlwrap poly --eval 'PolyML.Compiler.debug := true;' $(expand_arg $unique_arg "$arg" | sed 's/^\(.*\)$/--use \1/') --eval '"Entering trace mode; evaluate `PolyML.Debug.trace false` to leave";' --eval 'PolyML.Debug.trace true;'
+if rlwrap -v >/dev/null 2>&1 ; then
+    rlwrap=rlwrap
 else
-    rlwrap poly $(expand_arg -u "$arg" | sed 's/^\(.*\)$/--use \1/')
+    rlwrap=
+fi
+
+if [ "$debug" = "yes" ]; then
+    $rlwrap poly --eval 'PolyML.Compiler.debug := true;' $(expand_arg $unique_arg "$arg" | sed 's/^\(.*\)$/--use \1/') --eval '"Entering trace mode; evaluate `PolyML.Debug.trace false` to leave";' --eval 'PolyML.Debug.trace true;'
+else
+    $rlwrap poly $(expand_arg -u "$arg" | sed 's/^\(.*\)$/--use \1/')
 fi
 
 
