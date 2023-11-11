@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # Chris Cannam, 2015-2022. MIT licence
 

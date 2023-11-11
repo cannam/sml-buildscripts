@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # polyrepl - load a SML program defined in a MLB file into the Poly/ML
 # interactive environment

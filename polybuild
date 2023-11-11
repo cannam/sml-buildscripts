@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # polybuild - compile a SML program defined in a MLB file using Poly/ML
 #
