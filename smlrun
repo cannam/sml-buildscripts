@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # smlrun - run a SML program defined in a SML or MLB file using SML/NJ
 #

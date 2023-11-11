@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # smlrepl - load a SML program defined in a MLB file into the SML/NJ
 # interactive environment

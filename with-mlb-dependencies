@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # with-mlb-dependencies - run a (presumed) compiler command, while also
 # dumping out a dependency file. Intended for Meson build integration.

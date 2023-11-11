@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # mlb-dependencies - read a MLB file defining an SML program and print
 # out a list of the files referred to by it and any subsidiary MLB files

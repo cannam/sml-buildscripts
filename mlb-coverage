@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # mlb-coverage - compile and run an SML program defined in a MLB file
 #                using MLton and print a code coverage report
