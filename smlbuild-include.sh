@@ -111,7 +111,7 @@ expand_arg() {
 	   exit 1 ;;
     esac | (
         if [ "$unique" = "yes" ]; then
-            cat -n | sort +1 -u | sort -n | awk '{ print $2; }'
+            cat -n | sort -k 2 -u | sort -n | awk '{ print $2; }'
         else
             cat
         fi
