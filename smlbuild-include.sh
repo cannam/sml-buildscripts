@@ -41,7 +41,8 @@ simplify() {
 }
 
 cat_mlb() {
-    local mlb=$(canonicalise "$1")
+    local mlb
+    mlb=$(canonicalise "$1")
     if [ ! -f "$mlb" ]; then exit 1; fi
     local dir
     dir=$(dirname "$mlb")

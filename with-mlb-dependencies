@@ -73,5 +73,5 @@ shift
 
 env $env_args \
     "$mydir/mlb-dependencies" "$arg" | \
-    sed 's|^[^:]*: |'"$output: "'|' \
-        > "$deps"
+    sed 's|^[^:]*: |'"$output: "'|' > "$deps"
+
